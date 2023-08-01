@@ -56,6 +56,16 @@ CREATE TABLE IF NOT EXISTS `produits` (
   `categorie` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+--
+-- Déchargement des données de la table `produits`
+--
+
+INSERT INTO `produits` (`id`, `nom_produit`, `prix_produit`, `importe`, `taxe`, `t_importe`, `categorie`) VALUES
+(16, 'flacons de parfum', 47.5, 'oui', 20, 5, 'autre'),
+(15, 'boîtes de chocolats', 10, 'oui', 0, 5, 'nourriture'),
+(14, 'barres de chocolat', 0.85, 'non', 0, 0, 'nourriture'),
+(13, 'CD musical', 14.99, 'non', 20, 0, 'autre'),
+(17, 'livre', 12.49, 'non', 10, 0, 'livre');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
